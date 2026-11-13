@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#080d0c">
+<title>Банка — Transhumanism Inc.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bank-page">
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Transhumanism Inc. — главная">
+    <img src="img/ti-emblem.png" alt="Эмблема Transhumanism Inc." class="brand-emblem">
+    <span>TRANSHUMANISM <i>INC.</i></span>
+  </a>
+  <nav aria-label="Основная навигация">
+    <a href="index.html">Главная</a>
+    <a href="bank.html" aria-current="page">Банка</a>
+    <a href="history.html">Карбоновая эра</a>
+    <a href="glossary.html">Справка HEV</a>
+    <a href="surveys.html">Опросы</a>
+    <a href="elsinore.html">Эльсинор</a>
+  </nav>
+  <a class="header-access" href="bank.html">Получить доступ <span>↗</span></a>
+</header>
+
+<div class="note">Сайт ненастоящий: Transhumanism Inc. — вымышленная корпорация из романов В. О. Пелевина. Это учебный проект.</div>
+
+<main>
+  <section class="bank-intro">
+    <div class="bank-intro-copy">
+      <p class="bank-eyebrow"><span>PERSONAL EXPERIENCE DIVISION</span><b>01 / 03</b></p>
+      <h1>ТВОЯ ЛУЧШАЯ<br><em>ПОКУПКА — БАНКА</em></h1>
+      <p class="bank-lead">Больше не нужно бояться смерти, ведь мы предлагаем тебе вечную жизнь.</p>
+      <p class="bank-sublead">Индивидуальная реальность начинается с одного решения. Выбери направление — остальное система возьмёт на себя.</p>
+      <a class="bank-cta" href="#experiences">ВЫБРАТЬ СВОЮ РЕАЛЬНОСТЬ <span>↘</span></a>
+    </div>
+  </section>
+
+  <section class="bank-quote" aria-label="Корпоративный слоган">
+    <img src="img/hamlet-to-be.jpg" alt="" class="bank-quote-image">
+    <div class="bank-quote-shade"></div>
+    <div class="bank-quote-content">
+      <p class="bank-eyebrow">A NEW DEFINITION OF EXISTENCE</p>
+      <h2>IT IS «TO BE», <em>STUPID!</em></h2>
+      <p>«ТЫ ПОВЕРЬ В ИНУЮ ЖИЗНЬ / НА ДРУГОЙ МЕЖЕ / TRANSHUMANISM INC.»</p>
+    </div>
+    <span class="bank-quote-index">T.I. / 2026</span>
+  </section>
+
+  <section class="bank-experiences" id="experiences">
+    <div class="bank-section-head">
+      <div>
+        <p class="bank-eyebrow">YOUR PERSONAL UNIVERSE</p>
+        <h2>РЕАЛЬНОСТЬ<br><em>НА ВАШ ВЫБОР</em></h2>
+      </div>
+      <p>Некоторые двери лучше открывать самостоятельно.<br>Выберите мир, который вам ближе.</p>
+    </div>
+
+    <div class="experience-carousel" aria-label="Каталог симуляций">
+      <button class="experience-arrow experience-prev" type="button" aria-label="Предыдущая симуляция">←</button>
+      <div class="experience-grid" id="experienceTrack" tabindex="0" aria-label="Прокручиваемые карточки симуляций">
+        <article class="experience-card experience-roma">
+          <img src="img/roma-3.jpg" alt="" loading="lazy">
+          <div class="experience-shade"></div>
+          <div class="experience-meta"><span>SIMULATION 01</span><span>R&amp;G</span></div>
+          <div class="experience-copy">
+            <p>ХЛЕБА И ЗРЕЛИЩ</p>
+            <h3>ROMA-3</h3>
+          </div>
+        </article>
+        <article class="experience-card experience-yurasik">
+          <img src="img/yurasik.jpg" alt="" loading="lazy">
+          <div class="experience-shade"></div>
+          <div class="experience-meta"><span>SIMULATION 02</span><span>JURASSIC</span></div>
+          <div class="experience-copy">
+            <p>ПОЧУВСТВУЙТЕ ДРЕВНЮЮ СВОБОДУ</p>
+            <h3>ЮРАСИК</h3>
+          </div>
+        </article>
+        <article class="experience-card experience-basilio">
+          <img src="img/basilio.jpg" alt="" loading="lazy">
+          <div class="experience-shade"></div>
+          <div class="experience-meta"><span>SIMULATION 03</span><span>BASILIO</span></div>
+          <div class="experience-copy">
+            <p>ПОЗВОЛЬТЕ СЕБЕ БЕЗМЯТЕЖНОСТЬ</p>
+            <h3>БАЗИЛИО</h3>
+          </div>
+        </article>
+      </div>
+      <button class="experience-arrow experience-next" type="button" aria-label="Следующая симуляция">→</button>
+    </div>
+    <p class="bank-discreet-note"><span>◈</span> Подробности каждой симуляции раскрываются после выбора таера.</p>
+  </section>
+
+  <section class="bank-tier-section">
+    <div class="bank-tier-heading">
+      <p class="bank-eyebrow">PERSONAL CONFIGURATION</p>
+      <h2>ВЫБЕРИ СВОЙ <em>ТАЕР</em></h2>
+      <p>Уровень безграничности зависит от таера. И, конечно, ваших средств.</p>
+    </div>
+    <div class="tier bank-tier">
+      <h3>Продолжительность жизни</h3>
+      <input id="t" type="range" min="1" max="10" value="1" aria-label="Таер от 1 до 10">
+      <output id="y" for="t">200 лет</output>
+      <div class="shaft"><i id="s"></i></div>
+      <small id="d">Таер 1: гарантированные 200 лет жизни. Возможности расширяются вместе с выбранным уровнем.</small>
+    </div>
+  </section>
+</main>
+
+<footer class="home-footer"><span>TRANSHUMANISM INC. <i>©</i> 2026</span><span>Учебный проект · ПИР ЦТЛ · группа П-02 · Тюмень</span><span>Книжная вселенная В. О. Пелевина</span></footer>
+<script src="tier.js"></script>\n<script src="bank-carousel.js"></script>
+</body>
+</html>

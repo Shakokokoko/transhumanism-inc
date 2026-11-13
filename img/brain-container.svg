@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="none">
+<defs>
+ <radialGradient id="bg" cx="0" cy="0" r="1" gradientTransform="matrix(0 310 -310 0 320 320)" gradientUnits="userSpaceOnUse"><stop stop-color="#284D39" stop-opacity=".58"/><stop offset="1" stop-color="#07100C" stop-opacity="0"/></radialGradient>
+ <linearGradient id="glass" x1="170" x2="475" y1="110" y2="520" gradientUnits="userSpaceOnUse"><stop stop-color="#D4F4DE" stop-opacity=".3"/><stop offset=".45" stop-color="#64D9ED" stop-opacity=".07"/><stop offset="1" stop-color="#C4AD78" stop-opacity=".2"/></linearGradient>
+ <linearGradient id="brain" x1="210" x2="430" y1="180" y2="445" gradientUnits="userSpaceOnUse"><stop stop-color="#D7E8D8"/><stop offset=".48" stop-color="#8AB89A"/><stop offset="1" stop-color="#3D7455"/></linearGradient>
+ <filter id="glow" x="100" y="90" width="440" height="470" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="20"/></filter>
+</defs>
+<circle cx="320" cy="320" r="300" fill="url(#bg)"/>
+<ellipse cx="320" cy="324" rx="190" ry="235" fill="#8AC5A5" fill-opacity=".12" filter="url(#glow)"/>
+<path d="M190 135C190 112 209 94 232 94H408C431 94 450 112 450 135V483C450 506 431 524 408 524H232C209 524 190 506 190 483V135Z" fill="url(#glass)" stroke="#64D9ED" stroke-opacity=".48" stroke-width="2"/>
+<path d="M207 148H433M207 472H433" stroke="#D2B16F" stroke-opacity=".42" stroke-width="2"/>
+<path d="M226 112V506M414 112V506" stroke="#D6F0DD" stroke-opacity=".12" stroke-width="1.5"/>
+<path d="M235 455C218 436 220 407 236 390C217 366 226 332 249 320C234 294 247 264 270 255C260 228 279 203 305 202C315 178 345 178 357 201C385 198 405 220 396 247C423 264 425 295 407 317C429 341 421 373 400 388C413 415 396 443 371 451C352 474 256 475 235 455Z" fill="url(#brain)" stroke="#DDF2E2" stroke-opacity=".7" stroke-width="3"/>
+<path d="M319 204C306 226 313 246 326 258C307 277 310 302 326 317C307 337 309 360 325 376C310 395 313 422 329 450" stroke="#234C35" stroke-opacity=".7" stroke-width="5" stroke-linecap="round"/>
+<path d="M270 255C291 258 298 274 292 292M249 320C273 309 291 321 292 342M236 390C263 374 282 385 286 405M357 201C346 224 356 242 376 249M396 247C375 259 370 278 382 296M407 317C385 316 373 333 378 352M400 388C378 378 359 392 360 412" stroke="#E5F4E8" stroke-opacity=".6" stroke-width="4" stroke-linecap="round"/>
+<circle cx="320" cy="320" r="4" fill="#E4F4E8"/><path d="M320 98V65M320 575V542M190 320H155M485 320H450" stroke="#64D9ED" stroke-opacity=".5" stroke-width="2"/>
+<circle cx="320" cy="65" r="4" fill="#D2B16F"/><circle cx="485" cy="320" r="4" fill="#A94759"/>
+<text x="320" y="585" fill="#A8EFF8" font-family="Arial,sans-serif" font-size="12" letter-spacing="4" text-anchor="middle">HEV / NEURAL PRESERVATION UNIT</text>
+</svg>

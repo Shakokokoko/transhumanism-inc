@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Опрос — Transhumanism Inc.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="survey-form-page">
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Transhumanism Inc. — главная">
+    <img src="img/ti-emblem.png" alt="Эмблема Transhumanism Inc." class="brand-emblem">
+    <span>TRANSHUMANISM <i>INC.</i></span>
+  </a>
+  <nav aria-label="Основная навигация">
+    <a href="index.html">Главная</a><a href="bank.html">Банка</a><a href="history.html">Карбоновая эра</a>
+    <a href="glossary.html">Справка HEV</a><a href="surveys.html" aria-current="page">Опросы</a><a href="elsinore.html">Эльсинор</a>
+  </nav>
+  <a class="header-access" href="bank.html">Получить доступ <span>↗</span></a>
+</header>
+<div class="note">Сайт ненастоящий: Transhumanism Inc. — вымышленная корпорация из романов В. О. Пелевина. Это учебный проект, ничего из предложенного купить нельзя.</div>
+<main class="survey-shell">
+  <a class="survey-back" href="surveys.html">← ВСЕ ОПРОСЫ</a>
+  <div class="survey-heading">
+    <p class="survey-kicker"><span></span> RESEARCH DIVISION / RESPONSE TERMINAL</p>
+    <p class="survey-index" id="survey-index">FORM 01 / 03</p>
+    <h1 id="survey-title">ЗАГРУЗКА ОПРОСА</h1>
+    <p class="survey-description" id="survey-description"></p>
+  </div>
+  <div class="survey-frame-wrap">
+    <div class="survey-frame-top"><span>TRANSHUMANISM INC. · SECURE QUESTIONNAIRE</span><span>YANDEX FORMS</span></div>
+    <iframe id="yandex-form" title="Опрос Transhumanism Inc." src="about:blank" frameborder="0" width="100%" height="1050" loading="lazy" allow="clipboard-write"></iframe>
+  </div>
+  <p class="survey-footnote">Отправляя ответы, вы передаёте их через сервис Яндекс Формы. Обработка и хранение ответов выполняются на стороне Яндекса.</p>
+</main>
+<footer class="home-footer"><span>TRANSHUMANISM INC. <i>©</i> 2026</span><span>Учебный проект · ПИР ЦТЛ · группа П-02 · Тюмень</span><span>Книжная вселенная В. О. Пелевина</span></footer>
+<script src="https://forms.yandex.ru/_static/embed.js"></script>
+<script>
+(function(){
+ const forms={
+  "1":{id:"6af644abaeb352cdc36133ca",title:"НАМ С ВАМИ ПО ПУТИ",description:"Ценностный фильтр: насколько вы принимаете аксиомы корпорации.",index:"FORM 01 / 03"},
+  "2":{id:"6af64ce749af47b618901a95",title:"Я ВИДЕЛ ЭТО СЕГОДНЯ",description:"Узнавание: встречаете ли вы пелевинские ситуации в повседневной жизни.",index:"FORM 02 / 03"},
+  "3":{id:"6af64f2e49af47b618901abc",title:"ХОТЕЛИ БЫ ВЫ ВОСПОЛЬЗОВАТЬСЯ НАШИМИ УСЛУГАМИ?",description:"Проекция: что из фантастики вы готовы принять в своей реальности.",index:"FORM 03 / 03"}
+ };
+ const key=(location.hash||"#1").slice(1);
+ const item=forms[key]||forms["1"];
+ document.getElementById("survey-title").textContent=item.title;
+ document.getElementById("survey-description").textContent=item.description;
+ document.getElementById("survey-index").textContent=item.index;
+ const frame=document.getElementById("yandex-form");
+ frame.src="https://forms.yandex.ru/u/"+item.id+"?iframe=1";
+ frame.name="ya-form-"+item.id;
+ frame.title=item.title;
+})();
+</script>
+</body></html>
